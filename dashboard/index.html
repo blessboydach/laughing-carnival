@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANGUARD MD Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🤖</div>
+    <h1>VANGUARD MD</h1>
+    <p>Stateless Dashboard • Self-Service Pairing</p>
+
+    <input type="text" id="token" placeholder="Enter your token (vg_...)" required>
+    <button onclick="checkToken()">🔍 Check Token</button>
+
+    <div id="statusMessage" class="status hidden"></div>
+
+    <div id="pairSection" class="hidden">
+      <input type="text" id="phone" placeholder="Enter phone (256745626308)">
+      <button onclick="requestPair()">🔑 Pair Now</button>
+      <div id="pairResult"></div>
+    </div>
+
+    <div id="loader" class="loader hidden">
+      <div class="spinner"></div>
+      <strong>Requesting...</strong>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Mr.Admin Blue | VANGUARD MD<br>
+    All rights reserved 🔥
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
