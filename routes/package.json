@@ -1,0 +1,16 @@
+{
+  "name": "vanguard-dashboard-backend",
+  "version": "1.0.0",
+  "description": "Stateless dashboard backend for Vanguard MD",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  }
+}
